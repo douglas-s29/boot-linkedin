@@ -45,6 +45,13 @@ try:
     filtro_vagas = navegador.find_element_by_xpath(xpathFiltroVagas)
     filtro_vagas.click()
 
+
+    # Vagas para extrair do Linkedin
+    vagas = navegador.find_elements_by_name('python')
+    for value in vagas:
+        vagas = (value.text)
+        print('vagas')
+
     
 
 
