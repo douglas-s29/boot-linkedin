@@ -25,10 +25,10 @@ main_window = navegador.maximize_window()
 try:
     # Realizar login no linkedin
     login = navegador.find_element_by_id("username")
-    login.send_keys('') 
+    login.send_keys('') #colocar email
 
     senha = navegador.find_element_by_id("password")
-    senha.send_keys('') 
+    senha.send_keys('') #colocar senha
 
     # Clicar no botão de entrar
     botao_entrar = navegador.find_element_by_xpath(xpathBotaoEntrar)
